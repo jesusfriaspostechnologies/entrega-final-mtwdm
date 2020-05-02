@@ -1,0 +1,18 @@
+<style>
+    
+</style>
+
+<div class="jumbotron m-3">
+        <a class="btn btn-primary btn-lg lead float-md-right m-3" [routerLink]="['/products/categories',category]" role="button">Regresar a productos</a><br>
+    <h1 class="display-4">{{product.descripcion}}</h1>
+    <div class=col_izq>
+        <img src="../assets/images/productos/{{product.codigo}}.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class=col_der>
+        <p>{{product.provDescr}}</p>
+    </div>
+    <div class=clear></div>
+    <hr class="my-4">
+    <p class="lead float-md-right">Categoría: {{product.categoria}} | Proveedor: {{product.proveedor}}</p><br>
+    <p class="lead" style="display: block; text-align: center; width: 170px; color: #353535; background: #e0cb08; border-radius: 5px; padding: 5px;"><b>Precio: ${{product.precio | number}}</b></p>
+</div>

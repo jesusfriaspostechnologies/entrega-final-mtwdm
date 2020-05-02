@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.clear{
+    clear: both;
+}
+.col_izq{
+    float: left;
+    width: calc(50% - 60px);
+    padding: 20px;
+    margin-right: 20px;
+}
+.col_der{
+    float: right;
+    width: calc(50% - 60px);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.col_izq img, .col_der img{
+    width: 100%;;
+}

@@ -1,0 +1,28 @@
+<a class="btn btn-primary btn-lg m-3" [routerLink]="['/home']" role="button">Regresar a inico</a>
+<div class=text-center>
+  <div class="btn-group m-3" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Cars']" routerLinkActive="active" >Autos</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Buses']" routerLinkActive="active">Camionetas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Motorcycles']" routerLinkActive="active">Motocicletas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Ships']" routerLinkActive="active">Botes</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Planes']" routerLinkActive="active">Aviones</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Trains']" routerLinkActive="active">Trenes</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<!--<div class="card-columns m-3">-->
+
+    <!-- Definimos un ciclo for con la funcion ngFor la cual se define dentro del div, li, etc -->
+    <!-- ciclo: *ngFor="let item of misdatos" // let item of misdatos, seria como, foreach cosa as array -->
+    <!--<div class="card" *ngFor="let item of misdatos">
+      <img src="../assets/images/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.descripcion}}</h5>
+        <p class="card-text">{{item.categoria}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+  </div>-->
