@@ -12,7 +12,7 @@ export default {
         EXPIRES: 5000    // 5 segundos, también se puede manejar en segundos '120s'
     },
     MONGODB: {
-        HOST: 'localhost',
+        HOST: '10.211.55.9',
         PORT: 27017,
         USER_NAME: 'dba-root',
         USER_PASSWORD: 'mongodbadmin',
